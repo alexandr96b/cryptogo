@@ -32,6 +32,18 @@ $('.menu-icon').click(function(){
     });
 });
 
+$('.b-lang span').click(function(){
+    $('.b-lang ul').toggleClass('active');
+    $('.b-lang span').toggleClass('active');
+    $(document).on('click', function(event) {
+        if (!$(event.target).closest(".b-lang ul , .b-lang span").length) {
+            $('.b-lang ul').removeClass('active');
+            $('.b-lang span').removeClass('active');
+        }
+        event.stopPropagation();
+    });
+});
+
 
 var swiper = new Swiper('.b-portfolio__slider', {
     slidesPerView: 'auto',
@@ -63,124 +75,32 @@ var swiper = new Swiper('.b-portfolio__slider', {
 
 
 $(".modal-link").on("click", function() {
-    $('.modal-overlay[data-modal-id="'+$(this).data('modal-id')+'"]').addClass("active");
+    $('.modal-overlay[data-modal-id="'+$(this).data('modal-id')+'"] , body').addClass("active");
 });
 
-$(".b-modal__static-close").on("click", function() {
-    $(".modal-overlay").removeClass("active");
+$(".b-modal__close").on("click", function() {
+    $(".modal-overlay , body").removeClass("active");
 });
 
 $(document).on("click", function(e) {
     if(!$(e.target).closest(".b-modal__content").length && !$(e.target).closest(".modal-link").length) {
-        $(".modal-overlay").removeClass("active");
+        $(".modal-overlay , body").removeClass("active");
     }
 });
 
 
+var scrolledpx = parseInt($(window).scrollTop());
+$(window).scroll( function (){
 
+    scrolledpx = parseInt($(window).scrollTop());
 
-    var scrolledpx = parseInt($(window).scrollTop());
-    $(window).scroll( function (){
-
-        scrolledpx = parseInt($(window).scrollTop());
-
-        if(scrolledpx > 150){
-            $('.b-header').addClass('header-fix');
-        } else if(scrolledpx < 151){
-            $('.b-header').removeClass('header-fix');
-        }
-
-    })
-
-var $page = $('html, body');
-$('a[href*="#"]').click(function() {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 400);
-    return false;
-});
-
-
-
-
-var swiper = new Swiper('.b-impression__slider', {
-  slidesPerView: 'auto',
-  slidesToScroll: 1,
-    spaceBetween: 5,
-    freeMode: true,
-    loop: true,
-    speed: 5000,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false
-    },
-    breakpoints: {
-        379: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-        },
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-        },
-        1400: {
-            slidesPerView: 4,
-            spaceBetween: 44,
-        },
-    },
-    navigation: {
-        nextEl: ".btn-next",
-        prevEl: ".btn-prev",
-    },
-    on: {
-        init() {
-            this.el.addEventListener('mouseenter', () => {
-                this.autoplay.stop();
-            });
-
-            this.el.addEventListener('mouseleave', () => {
-                this.autoplay.start();
-            });
-        }
-    },
-});
-
-
-
-
-    var jsTriggers = document.querySelectorAll('.js-tab-trigger'),
-        jsContents = document.querySelectorAll('.js-tab-content');
-    jsTriggers.forEach(function(trigger) {
-        trigger.addEventListener('click', function() {
-            var id = this.getAttribute('data-tab'),
-                content = document.querySelector('.js-tab-content[data-tab="'+id+'"]'),
-                activeTrigger = document.querySelector('.js-tab-trigger.active'),
-                activeContent = document.querySelector('.js-tab-content.active');
-
-            activeTrigger.classList.remove('active'); // 1
-            trigger.classList.add('active'); // 2
-
-            activeContent.classList.remove('active'); // 3
-            content.classList.add('active'); // 4
-        });
-    });
-
-
-    if ($('#regForm').length) {
-        $('#nextBtn').click(() => {
-            $('html,body').animate({
-                scrollTop: $('#regForm').offset().top - $('.b-header').height()
-            });
-        });
+    if(scrolledpx > 150){
+        $('.b-header').addClass('header-fix');
+    } else if(scrolledpx < 151){
+        $('.b-header').removeClass('header-fix');
     }
+
+})
 
 });
 
