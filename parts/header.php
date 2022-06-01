@@ -76,7 +76,7 @@
 					</div>
 				</div>
 				<div class="b-promo__btns d-flex justify-content-center align-items-center">
-					<a href="" class="ripple purple-btn purple-btn_big">ПРИСОЕДЕНИТЬСЯ</a>
+					<a href="" class="ripple purple-btn purple-btn_big modal-link">ПРИСОЕДЕНИТЬСЯ</a>
 				</div>
 				<div class="b-header__nav b-header__nav_xs">
 					<a href="" class="b-header__nav-btn ripple pink-btn">Новости<i></i></a>

@@ -61,6 +61,24 @@ var swiper = new Swiper('.b-portfolio__slider', {
 });
 
 
+
+$(".modal-link").on("click", function() {
+    $('.modal-overlay[data-modal-id="'+$(this).data('modal-id')+'"]').addClass("active");
+});
+
+$(".b-modal__static-close").on("click", function() {
+    $(".modal-overlay").removeClass("active");
+});
+
+$(document).on("click", function(e) {
+    if(!$(e.target).closest(".b-modal__content").length && !$(e.target).closest(".modal-link").length) {
+        $(".modal-overlay").removeClass("active");
+    }
+});
+
+
+
+
     var scrolledpx = parseInt($(window).scrollTop());
     $(window).scroll( function (){
 
