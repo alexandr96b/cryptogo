@@ -24,7 +24,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: url(../images/id.png) center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     mix-blend-mode: color-dodge;
     max-height: 977px;
 }
@@ -230,7 +230,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: url(../images/descd.png) center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     mix-blend-mode: color-dodge;
     max-height: 977px;
 }
@@ -377,7 +377,7 @@
     top: 0px;
     left: 0;
     content: "";
-    background: url("../images/invd.png") center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     width: 1919px;
     height: 977px;
     mix-blend-mode: color-dodge;
@@ -522,7 +522,7 @@
     top: 0px;
     left: 0;
     content: "";
-    background: url("../images/pord.png") center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     width: 1919px;
     height: 977px;
     mix-blend-mode: color-dodge;
@@ -676,7 +676,7 @@
     top: 539px;
     left: 0;
     content: "";
-    background: url("../images/cd.png") center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     width: 1920px;
     height: 977px;
     mix-blend-mode: color-dodge;
@@ -734,7 +734,7 @@
     top: 116px;
     left: 0;
     content: "";
-    background: url("../images/std.png") center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     width: 1918px;
     height: 978px;
     mix-blend-mode: color-dodge;
@@ -843,7 +843,7 @@
     top: -500px;
     right: 0;
     content: "";
-    background: url("../images/abg.png") top center no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     width: 1920px;
     height: 2592px;
 }
@@ -852,7 +852,7 @@
     top: 310px;
     left: 0;
     content: "";
-    background: url("../images/ad.png") center top no-repeat;
+    background: url("../images/pd.png") center top no-repeat;
     width: 1918px;
     height: 977px;
     mix-blend-mode: color-dodge;
