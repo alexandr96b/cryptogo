@@ -111,7 +111,7 @@
 }
 .b-info__item-img img{
     margin: 0 auto 0;
-    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.27)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.194091)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.160949)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.135)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.109051)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0759093));
+/*    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.27)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.194091)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.160949)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.135)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.109051)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0759093));*/
 }
 .b-info__item p{
     font-weight: 400;
@@ -146,7 +146,6 @@
 .b-info__block{
     background: #0C051A;
     border: 2px solid #FFFFFF;
-    backdrop-filter: blur(12.6796px);
     border-radius: 3px;
     display: flex;
     justify-content: space-between;
@@ -165,19 +164,22 @@
     background: url("../images/blr.png");
     width: 427px;
     height: 427px;
-    filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
-    z-index: 1;
+/*
+filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
+z-index: 1;
+ */
 }
 .b-info__block-img{
-    position: absolute;
-    top: 50%;
-    left: -170px;
-    transform: translateY(-50%);
-    max-width: 365px;
+position: absolute;
+top: 50%;
+left: -170px;
+transform: translateY(-50%);
+max-width: 365px;
 }
-.b-info__block-img img{
-    filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
+/*.b-info__block-img img{
+filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
 }
+*/
 .b-info__block-left{
     font-weight: 400;
     font-size: 50px;
@@ -306,7 +308,10 @@
     left: 50%;
     transform: translateX(-50%);
     content: "";
+    /*
     filter: drop-shadow(0px 0px 24px #FC5AFF) drop-shadow(0px 0px 90px #FC5AFF) drop-shadow(0px 0px 60px #FC5AFF) drop-shadow(0px 0px 60px #FC5AFF) drop-shadow(0px 0px 5px #FED5FF);
+
+     */
 }
 .b-desc__item:after{
     position: absolute;
@@ -778,6 +783,7 @@
     margin: 0 0 45px 0;
     position: relative;
 }
+/*
 .b-step__row-img:before{
     position: absolute;
     top: 50%;
@@ -789,6 +795,8 @@
     width: 163px;
     height: 163px;
 }
+
+ */
 .b-step__row-img img{
     margin: 0 auto 0;
 }
@@ -1095,7 +1103,7 @@
 }
 .footer-btn:hover {
     box-shadow: 0px 0px 5.16144px #85FF5A, 0px 0px 74.24px rgba(133, 255, 90, 0.5), 0px 0px 70px rgba(133, 255, 90, 0.2);
-    filter: contrast(80%);
+    opacity: 0.8;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -1114,7 +1122,7 @@
     transition: 0.3s;
 }
 .b-footer-social ul li a:hover{
-    filter: contrast(50%);
+    opacity: 0.8;
     transition: 0.3s;
 }
 .b-footer .row{
@@ -1178,7 +1186,7 @@
     background: url("../images/modal-ob.png") no-repeat;
     width: 298px;
     height: 587px;
-    filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
+/*    filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));*/
 }
 .modal-2{
     background: #0C051A url("../images/modal-bg.png") center top no-repeat;
@@ -1202,7 +1210,7 @@
 .b-modal__content-title img{
     margin: 0 auto 0;
     max-width: inherit;
-    filter: drop-shadow(0px 3.7223px 61.8156px rgba(0, 0, 0, 0.55));
+/*    filter: drop-shadow(0px 3.7223px 61.8156px rgba(0, 0, 0, 0.55));*/
 }
 .b-modal__content-title span{
     font-weight: 500;
@@ -1239,7 +1247,7 @@
     background: url("../images/modal-left.png") center no-repeat;
     width: 477px;
     height: 840px;
-    filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
+/*    filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));*/
 }
 .modal-1 .b-modal__content{
     max-width: 100%;

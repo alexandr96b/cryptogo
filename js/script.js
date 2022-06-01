@@ -72,9 +72,6 @@ var swiper = new Swiper('.b-portfolio__slider', {
     },
 });
 
-$("img.lazy").lazyload({
-    effect : "fadeIn"
-});
 
 $(".modal-link").on("click", function() {
     $('.modal-overlay[data-modal-id="'+$(this).data('modal-id')+'"] , body').addClass("active");

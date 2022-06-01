@@ -103,7 +103,8 @@ button:hover , button:focus , button:active{
 }
 .pink-btn:hover{
 	box-shadow: 0px 0px 5.16144px #85FF5A, 0px 0px 44.30px rgba(133, 255, 90, 0.5), 0px 0px 30px rgba(133, 255, 90, 0.5);
-	filter: contrast(150%);
+	opacity: 0.8;
+	-webkit-transform: translate3d(0,0,0);
 	text-decoration: none;
 	transition: 0.3s;
 }
@@ -130,7 +131,7 @@ button:hover , button:focus , button:active{
 }
 .purple-btn:hover{
 	box-shadow: 0px 0px 5.16144px #DB00FF, 0px 0px 74px rgba(219, 0, 255, 0.5), 0px 0px 74px rgba(219, 0, 255, 0.5);
-	filter: contrast(150%);
+	opacity: 0.8;
 	text-decoration: none;
 	transition: 0.3s;
 }
@@ -422,7 +423,7 @@ textarea{
 }
 .b-promo__logo img{
 	margin: 0 auto 0;
-	filter: drop-shadow(0px 5.35081px 88.86px rgba(0, 0, 0, 0.55));
+	/*filter: drop-shadow(0px 5.35081px 88.86px rgba(0, 0, 0, 0.55));*/
 	position: relative;
 	left: 36px;
 }
@@ -457,7 +458,7 @@ textarea{
 	position: absolute;
 	bottom: -180px;
 	right: -275px;
-	filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));
+/*	filter: drop-shadow(0px 283px 80px rgba(0, 0, 0, 0.26)) drop-shadow(0px 118.231px 33.4221px rgba(0, 0, 0, 0.186902)) drop-shadow(0px 63.2118px 17.869px rgba(0, 0, 0, 0.154988)) drop-shadow(0px 35.436px 10.0172px rgba(0, 0, 0, 0.13)) drop-shadow(0px 18.8198px 5.32008px rgba(0, 0, 0, 0.105012)) drop-shadow(0px 7.83134px 2.21381px rgba(0, 0, 0, 0.0730979));*/
 }
 .b-header__nav_xs{
 	display: none;
