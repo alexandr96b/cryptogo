@@ -1,4 +1,4 @@
-git <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 
@@ -76,7 +76,7 @@ git <!DOCTYPE html>
 				</div>
 			</div>
 			<div class="b-promo__btns d-flex justify-content-center align-items-center">
-				<a href="" class="ripple purple-btn purple-btn_big modal-link">ПРИСОЕДЕНИТЬСЯ</a>
+				<a href="javascript: void(0);" data-modal-id="2" class="ripple purple-btn purple-btn_big modal-link">ПРИСОЕДЕНИТЬСЯ</a>
 			</div>
 			<div class="b-header__nav b-header__nav_xs">
 				<a href="" class="b-header__nav-btn ripple pink-btn">Новости<i></i></a>
@@ -249,36 +249,42 @@ git <!DOCTYPE html>
 				<div class="b-portfolio__slider swiper-container">
 					<div class="swiper-wrapper">
 						<div class="b-portfolio__slider-item swiper-slide">
-							<div class="b-portfolio__slider-item_top">
-								<div class="b-portfolio__slider-img">
-									<img src="images/slid-img.png" alt="">
+							<div class="b-portfolio__slider-block">
+								<div class="b-portfolio__slider-item_top">
+									<div class="b-portfolio__slider-img">
+										<img src="images/slid-img.png" alt="">
+									</div>
+									<span>near</span>
 								</div>
-								<span>near</span>
-							</div>
-							<div class="b-portfolio__slider-row">
-								<span>+427%</span>
+								<div class="b-portfolio__slider-row">
+									<span>+427%</span>
+								</div>
 							</div>
 						</div>
 						<div class="b-portfolio__slider-item swiper-slide">
-							<div class="b-portfolio__slider-item_top">
-								<div class="b-portfolio__slider-img">
-									<img src="images/slid-img2.png" alt="">
+							<div class="b-portfolio__slider-block">
+								<div class="b-portfolio__slider-item_top">
+									<div class="b-portfolio__slider-img">
+										<img src="images/slid-img2.png" alt="">
+									</div>
+									<span>STEPN</span>
 								</div>
-								<span>STEPN</span>
-							</div>
-							<div class="b-portfolio__slider-row">
-								<span>+542%</span>
+								<div class="b-portfolio__slider-row">
+									<span>+542%</span>
+								</div>
 							</div>
 						</div>
 						<div class="b-portfolio__slider-item swiper-slide">
-							<div class="b-portfolio__slider-item_top">
-								<div class="b-portfolio__slider-img">
-									<img src="images/slid-img3.png" alt="">
+							<div class="b-portfolio__slider-block">
+								<div class="b-portfolio__slider-item_top">
+									<div class="b-portfolio__slider-img">
+										<img src="images/slid-img3.png" alt="">
+									</div>
+									<span>solana</span>
 								</div>
-								<span>solana</span>
-							</div>
-							<div class="b-portfolio__slider-row">
-								<span>+32%</span>
+								<div class="b-portfolio__slider-row">
+									<span>+32%</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -440,22 +446,6 @@ git <!DOCTYPE html>
 	</div>
 </section>
 
-	<!-- Modal -->
-	<div class="modal-overlay modal-gift b-modal__static" data-modal-id="2">
-		<div class="b-modal__content">
-			<button type="button" class="b-modal__static-close"></button>
-			<div class="b-modal__content-img"><img src="images/gift.svg" alt=""></div>
-			<div class="b-modal__content-text">
-				<b>Вы выграли приз!!!</b>
-				<p>Полосочку прогресса как на Главном экране под словом<br/> TWELVCO может сделать на всех страницах? </p>
-			</div>
-			<button class="yellow-btn ripple">Забрать приз</button>
-		</div>
-	</div>
-
-
-
-
 
 	<!-- begin b-footer -->
 	<footer class="b-footer">
@@ -513,6 +503,13 @@ git <!DOCTYPE html>
 
 </div>
 
+<!-- Modal -->
+<div class="modal-overlay modal-gift b-modal__static" data-modal-id="2">
+	<div class="b-modal__content">
+		<button type="button" class="b-modal__static-close"></button>
+		<button class="yellow-btn ripple">Забрать приз</button>
+	</div>
+</div>
 
 
 <link href="icomoon/style.css" rel="stylesheet">
